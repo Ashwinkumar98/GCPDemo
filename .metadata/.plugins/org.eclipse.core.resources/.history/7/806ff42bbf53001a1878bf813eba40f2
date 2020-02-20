@@ -1,0 +1,24 @@
+package com.example.booking.service;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.example.booking.BookTicketService.BookTicketServiceProxy;
+import com.example.booking.api.BookingApi;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class BookingServiceImp implements BookingService {
+	
+//	private final BookTicketServiceProxy proxy;
+
+	@Override
+	public ResponseEntity<?> BookTicket(BookingApi booking) {
+		//return proxy.BookTicket();
+		return null;
+	}
+
+	
+}

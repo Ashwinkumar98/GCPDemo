@@ -1,0 +1,9 @@
+package com.microservice.app.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.BookTicket.modal.Train;
+
+public interface TrainRepository extends JpaRepository<Train, Integer> {
+
+}

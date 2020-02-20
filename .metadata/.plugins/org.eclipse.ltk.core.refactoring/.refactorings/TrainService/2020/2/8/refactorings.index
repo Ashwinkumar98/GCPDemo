@@ -1,0 +1,21 @@
+1582116727868	Rename package 'com.example.demo'
+1582117550207	Rename type 'AvailabilityRepo'
+1582119140911	Copy compilation unit
+1582172930830	Delete element
+1582177897692	Rename resource 'application.properties'
+1582178769775	Delete element
+1582178783833	Delete element
+1582178805392	Delete element
+1582180380614	Rename resource 'bootstrap.properties'
+1582180477013	Rename resource 'application.properties'
+1582191925745	Copy compilation unit
+1582192079302	Delete element
+1582192460093	Delete element
+1582195076154	Rename type 'AvailabilityCheckController'
+1582195117961	Rename package 'com.example.AvailabilityService'
+1582195137649	Rename package 'com.example.AvailabilityService.Service'
+1582195149793	Rename package 'com.example.AvailabilityService.Repository'
+1582195163628	Rename package 'com.example.AvailabilityService.modal'
+1582195175105	Rename package 'com.example.AvailabilityService.controller'
+1582198940037	Rename type 'AvailabilityService'
+1582198950981	Rename type 'AvailabilityServiceImp'

@@ -1,0 +1,7 @@
+package com.example.BookTicket.service;
+
+public interface TicketBookingService {
+	
+	public void BookTicket(String passname,Integer age,String gender,Integer trainno);
+	
+}

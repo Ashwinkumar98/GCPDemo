@@ -1,0 +1,13 @@
+package com.example.booking.api;
+import lombok.Data;
+
+
+@Data
+public class BookingApi {
+	
+	private String passangerName;
+	private String passangerAge;
+	private String PassangerGender;
+	private BookingApi traindetails;
+	
+}

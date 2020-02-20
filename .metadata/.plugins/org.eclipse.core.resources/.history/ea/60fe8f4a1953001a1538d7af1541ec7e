@@ -1,0 +1,5 @@
+package com.example.AvailabilityService.modal;
+
+public class Train {
+
+}

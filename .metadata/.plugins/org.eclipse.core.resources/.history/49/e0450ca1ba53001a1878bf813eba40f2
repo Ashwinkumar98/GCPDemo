@@ -1,0 +1,12 @@
+package com.example.booking.BookTicketService;
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@FeignClient(name="BookTicket-service" , url="localhost:8082")
+public interface BookTicketServiceProxy {
+	
+	@PostMapping("/")
+	public ResponseEntity<?> BookTicket();
+}

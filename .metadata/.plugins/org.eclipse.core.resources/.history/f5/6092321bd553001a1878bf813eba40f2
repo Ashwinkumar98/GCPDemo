@@ -1,0 +1,32 @@
+package com.example.Train.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.Train.Service.AvailabilityService;
+import com.example.Train.modal.Train;
+
+import lombok.RequiredArgsConstructor;
+
+@RestController
+@RequiredArgsConstructo
+public class TrainController {
+	
+	private final AvailabilityService service;
+	
+	@PostMapping("/addtrain")
+	public ResponseEntity<Train> addtrain(@RequestBody Train train) {
+		return new ResponseEntity<Train>(service.addTrain(train),HttpStatus.OK);
+	}
+	
+	@GetMapping("/check")
+	public ResponseEntity<Boolean> checkAvailability(@RequestParam("trainNo") Integer trainNo){
+		return new ResponseEntity<>(service.CheckAvailability(trainNo),HttpStatus.OK);
+	}
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\Pepsico_EIAP\batch"/>
+			<item value="C:\Users\765070\Downloads\inventory-visibility-odata-service (1)\inventory-visibility-odata-service"/>
+			<item value="D:\Pepsico_EIAP"/>
+			<item value="D:\Pepsico_EIAP\inventory-visibility-odata-service"/>
+			<item value="D:\Pepsico_EIAP\inventory-visibility-batch"/>
+			<item value="D:\GeniusOne"/>
+			<item value="D:\Spring_Workspace\Spring-total-Training-Project\Spring boot"/>
+			<item value="D:\Spring_Workspace\Spring-total-Training-Project\Spring boot\Telecome"/>
+			<item value="D:\Spring_Workspace\Spring-total-Training-Project"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

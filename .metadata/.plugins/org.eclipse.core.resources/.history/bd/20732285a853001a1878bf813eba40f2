@@ -1,0 +1,15 @@
+package com.example.booking.modal;
+import lombok.Data;
+
+
+@Data
+public class Booking {
+	
+	private String passangerName;
+	private String passangerAge;
+	private String PassangerGender;
+	@OneToOne
+	@JoinColumn(name = "trainno")
+	private Booking traindetails;
+	
+}

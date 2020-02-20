@@ -1,0 +1,30 @@
+package com.pepsico.onenetwork.service.jda;
+
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.google.gson.Gson;
+import com.pepsi.onenetwork.configuration.IntakeConfigProperty;
+import com.pepsi.onenetwork.util.BuildrequestRequestUtil;
+import com.pepsi.onenetwork.util.IntakeServiceUtil;
+import com.pepsi.onenetwork.util.RestTemplateUtil;
+
+@RunWith(SpringRunner.class)
+public class TenderToShipmentTrackingTransformTest {
+	
+	@MockBean
+	BuildrequestRequestUtil contructRequestUtil;
+
+	@MockBean
+	IntakeConfigProperty config;
+
+	@MockBean
+	RestTemplateUtil restTemplateUtil;
+
+	@MockBean
+	IntakeServiceUtil intakeServiceUtil;
+	
+}

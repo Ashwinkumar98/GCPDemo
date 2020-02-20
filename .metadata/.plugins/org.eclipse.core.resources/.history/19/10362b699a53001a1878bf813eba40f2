@@ -1,0 +1,12 @@
+package com.example.BookingModal.api;
+
+public class Snippet {
+	public static void main(String[] args) {
+		 <dependency>
+				    <groupId>com.example</groupId>
+					<artifactId>Modal</artifactId>
+					<version>0.0.1-SNAPSHOT</version>
+			    </dependency>
+	}
+}
+

@@ -1,0 +1,6 @@
+package com.example.Train.Service;
+
+public interface AvailabilityService {
+	
+	public Boolean CheckAvailability(Integer trainNo);
+}

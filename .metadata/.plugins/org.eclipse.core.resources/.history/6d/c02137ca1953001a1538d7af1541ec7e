@@ -1,0 +1,16 @@
+package com.example.AvailabilityService.Service;
+
+import org.springframework.stereotype.Service;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class AvailabilityServiceImp implements AvailabilityService{
+
+	@Override
+	public Boolean CheckAvailability(Integer trainNo) {
+		return null;
+	}
+	
+}

@@ -1,0 +1,10 @@
+package com.example.AvailabilityService.modal;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Train")
+public class Train {
+
+}

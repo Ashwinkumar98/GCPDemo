@@ -1,0 +1,10 @@
+package com.example.BookingModal.modal;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Booking")
+public class Booking {
+
+}

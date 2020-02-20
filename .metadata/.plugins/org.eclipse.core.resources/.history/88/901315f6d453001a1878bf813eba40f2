@@ -1,0 +1,8 @@
+package com.example.BookTicket.TrainService;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="Train-service")
+public interface TrainServiceProxy {
+
+}

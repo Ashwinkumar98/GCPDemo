@@ -1,0 +1,16 @@
+package com.example.booking.api;
+
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Data;
+
+
+@Data
+
+public class BookingApi {
+	private String passangerName;
+	private String passangerAge;
+	private String PassangerGender;
+	private Integer traindetails;
+	
+}

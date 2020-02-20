@@ -1,0 +1,32 @@
+package com.example.Train.Service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.Train.Repository.TrainRepository;
+import com.example.Train.modal.Train;
+
+import lombok.RequiredArgsConstructor;
+import net.bytebuddy.asm.Advice.Return;
+
+@Service
+@RequiredArgsConstructor
+public class AvailabilityServiceImp implements AvailabilityService{
+	
+	private final TrainRepository repository;
+	
+	@Override
+	public Boolean CheckAvailability(Integer trainNo) {
+		return repository.existsById(trainNo);
+	}
+
+	@Override
+	public Train addTrain(Train train) {
+		return repository.save(train);
+	}
+
+	@Override
+	public Double getfare(Integer trainno) {
+		 return repository.findById(trainno).map(t -> t.getFare()).orElse(0.0);
+	}
+	
+}

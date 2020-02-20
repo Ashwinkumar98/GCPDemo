@@ -1,0 +1,19 @@
+package com.example.BookTicket.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import lombok.RequiredArgsConstructor;
+
+@RestController
+@RequiredArgsConstructor
+public class TicketBookingController {
+	
+	@PostMapping("/Booking")
+	public ResponseEntity<?> BookTicket(){
+		return new ResponseEntity<>(HttpStatus.OK);
+	}
+}

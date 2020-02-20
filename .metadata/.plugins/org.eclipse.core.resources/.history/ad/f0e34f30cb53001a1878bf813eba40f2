@@ -1,0 +1,19 @@
+package com.example.BookTicket.service;
+
+import org.springframework.stereotype.Service;
+import com.example.BookTicket.repository.TrainRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class TicketBookingServiceImp implements TicketBookingService {
+	
+	private final TrainRepository repository;
+	
+	@Override
+	public void BookTicket() {
+		
+	}
+	
+}

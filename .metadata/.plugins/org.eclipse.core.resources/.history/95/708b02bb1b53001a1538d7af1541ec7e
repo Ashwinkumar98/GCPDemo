@@ -1,0 +1,8 @@
+package com.example.BookTicket.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class TicketBookingServiceImp implements TicketBookingService {
+
+}

@@ -1,0 +1,21 @@
+package com.example.booking.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.booking.BookTicketService.BookTicketServiceProxy;
+import com.example.booking.api.BookingApi;
+
+
+@Service
+public class BookingServiceImp implements BookingService {
+	
+	private final BookTicketServiceProxy proxy;
+
+	@Override
+	public void BookTicket(BookingApi booking) {
+		
+		
+	}
+
+	
+}

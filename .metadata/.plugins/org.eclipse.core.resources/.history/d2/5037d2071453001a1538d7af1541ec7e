@@ -1,0 +1,9 @@
+package com.example.booking.modal;
+
+public class Booking {
+	
+	private String PassangerName;
+	private String age;
+	private String gender;
+	private String trainNumber;
+}

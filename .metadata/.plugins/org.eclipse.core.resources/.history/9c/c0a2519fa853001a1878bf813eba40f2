@@ -1,0 +1,8 @@
+package com.example.booking.service;
+
+import com.example.BookingModal.api.BookingApi;
+
+public interface BookingService {
+	
+	public void BookTicket(BookingApi booking);
+}

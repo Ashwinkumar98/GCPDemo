@@ -1,0 +1,9 @@
+spring.application.name = Availability-service
+server.port = 8081
+spring.datasource.url=jdbc:mysql://localhost:3306/train
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.username = root
+spring.datasource.password = root
+spring.jpa.show-sql = true
+
+#spring.cloud.config.uri = http://localhost:8888

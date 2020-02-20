@@ -1,0 +1,21 @@
+package com.example.BookTicket.TrainService;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.example.BookTicket.modal.Train;
+
+@FeignClient(name="Train-service" ,url="localhost:8080")
+public interface TrainServiceProxy {
+	
+	@GetMapping("/Train/Availability/{trainNo}")
+	public Train checkAvailability(@PathVariable("trainNo") Integer trainNo);
+	
+	@PutMapping("/Train/update")
+	public ResponseEntity<?> updateTrain(@RequestBody Train train);
+	
+}

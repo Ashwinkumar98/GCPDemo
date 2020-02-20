@@ -1,0 +1,15 @@
+package com.example.booking.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.booking.modal.Booking;
+
+@Service
+public class BookingServiceImp implements BookingService {
+
+	@Override
+	public void BookTicket(Booking booking) {
+		System.out.println(booking.getPassangerName());
+	}
+	
+}

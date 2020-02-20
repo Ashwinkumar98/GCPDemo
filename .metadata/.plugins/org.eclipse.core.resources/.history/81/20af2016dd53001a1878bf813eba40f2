@@ -1,0 +1,11 @@
+package com.example.Train.Service;
+
+import com.example.Train.modal.Train;
+
+public interface TrainService {
+	
+	public Boolean CheckAvailability(Integer trainNo);
+	public Train addTrain(Train train);
+	public Train checkTrain(Integer train);
+	public Double getfare(Integer trainno);
+}

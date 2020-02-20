@@ -1,0 +1,9 @@
+package com.example.booking.service;
+
+import org.springframework.http.ResponseEntity;
+import com.example.modal.Booking;
+
+public interface BookingService {
+
+	public ResponseEntity<?> BookTicket(BookingApi booking);
+}

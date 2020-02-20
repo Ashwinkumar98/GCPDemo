@@ -1,0 +1,27 @@
+package com.example.booking.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.example.booking.BookTicketService.BookTicketServiceProxy;
+import com.example.booking.api.BookingApi;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+
+public class BookingServiceImp implements BookingService {
+	
+//	@Autowired
+//	private BookTicketServiceProxy proxy;
+
+	@Override
+	public ResponseEntity<?> BookTicket(BookingApi booking) {
+		//return proxy.BookTicket();
+		return new ResponseEntity<>(HttpStatus.OK);
+	}
+
+	
+}

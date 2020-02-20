@@ -1,0 +1,35 @@
+package com.example.BookTicket.service;
+
+import org.springframework.stereotype.Service;
+import com.example.BookTicket.TrainService.TrainServiceProxy;
+import com.example.BookTicket.modal.Booking;
+import com.example.BookTicket.modal.Train;
+import com.example.BookTicket.repository.PassangerRepository;
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class TicketBookingServiceImp implements TicketBookingService {
+	
+	private final PassangerRepository passangerRepo;
+	private final TrainServiceProxy proxy;
+
+	@Override
+	public String BookTicket(String name, Integer age, String gender, Integer trainno) {
+		
+		Train t = proxy.checkTrain(trainno);
+		if(t!=null) {
+			Booking book = new Booking();
+			book.setPassangerName(name);
+			book.setPassangerAge(age);
+			book.setPassangerGender(gender);
+			book.setTraindetails(t);
+			passangerRepo.save(book);
+			return "Ticket Booked Successfully";
+		}
+		else {
+			return "No Ticket Available";
+		}
+	}
+	
+}
