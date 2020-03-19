@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  welcome : welcome to GCP config map
+kind: ConfigMap
+metadata:
+  name: GCPdemoConfigMap
+  namespace: default
